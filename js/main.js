@@ -1,27 +1,47 @@
-// js/main.js
-
 const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = themeToggle.querySelector("i");
 
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
 
-  themeToggle.textContent = currentTheme === "dark" ? "🌙" : "☀️";
-}
+  document.documentElement.setAttribute("data-theme",currentTheme);
 
-themeToggle.addEventListener("click", () => {
-  let theme = document.documentElement.getAttribute("data-theme");
+              updateIcon(currentTheme);
+              }
 
-  if (theme === "dark") {
-    theme = "light";
-    themeToggle.textContent = "☀️";
-  } else {
-    theme = "dark";
-    themeToggle.textContent = "🌙";
-  }
+              themeToggle.addEventListener("click", () => {
 
-  document.documentElement.setAttribute("data-theme", theme);
+                let theme =
+                    document.documentElement.getAttribute("data-theme");
 
-  localStorage.setItem("theme", theme);
-});
+                      theme = theme === "dark"
+                          ? "light"
+                              : "dark";
+
+                                document.documentElement.setAttribute(
+                                    "data-theme",
+                                        theme
+                                          );
+
+                                            localStorage.setItem("theme", theme);
+
+                                              updateIcon(theme);
+
+                                              });
+
+                                              function updateIcon(theme) {
+
+                                                if (theme === "dark") {
+
+                                                    themeIcon.classList.remove("fa-sun");
+                                                        themeIcon.classList.add("fa-moon");
+
+                                                          } else {
+
+                                                              themeIcon.classList.remove("fa-moon");
+                                                                  themeIcon.classList.add("fa-sun");
+
+                                                                    }
+
+                                                                    }
