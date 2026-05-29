@@ -1,225 +1,221 @@
-/* css/styles.css */
-
 * {
   margin: 0;
-    padding: 0;
-      box-sizing: border-box;
-      }
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      :root {
-        --bg: #0f172a;
-          --surface: #1e293b;
-            --primary: #3b82f6;
-              --text: #f8fafc;
-                --text-secondary: #94a3b8;
-                  --border: #334155;
-                  }
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --primary: #3b82f6;
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border: #334155;
+}
 
-                  [data-theme="light"] {
-                    --bg: #f8fafc;
-                      --surface: #ffffff;
-                        --primary: #2563eb;
-                          --text: #0f172a;
-                            --text-secondary: #475569;
-                              --border: #cbd5e1;
-                              }
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --primary: #2563eb;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --border: #cbd5e1;
+}
 
-                              body {
-                                background: var(--bg);
-                                  color: var(--text);
-                                    font-family: Arial, sans-serif;
-                                      transition: 0.3s;
-                                      }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
 
-                                      .container {
-                                        width: 90%;
-                                          max-width: 1200px;
-                                            margin: auto;
-                                            }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-                                            .header {
-                                              border-bottom: 1px solid var(--border);
-                                                position: sticky;
-                                                  top: 0;
-                                                    background: var(--bg);
-                                                    }
+.header {
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+}
 
-                                                    .nav {
-                                                      height: 80px;
+.nav {
+  height: 80px;
 
-                                                        display: flex;
-                                                          align-items: center;
-                                                            justify-content: space-between;
-                                                            }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-                                                            .logo {
-                                                              color: var(--primary);
-                                                              }
+.logo {
+  color: var(--primary);
+}
 
-                                                              .nav-links {
-                                                                display: flex;
-                                                                  gap: 2rem;
-                                                                  }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
 
-                                                                  .nav-links a {
-                                                                    color: var(--text);
-                                                                      text-decoration: none;
-                                                                      }
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+}
 
-                                                                      .theme-toggle {
-                                                                        background: var(--surface);
-                                                                          border: 1px solid var(--border);
-                                                                            color: var(--text);
-                                                                              padding: 10px 14px;
-                                                                                border-radius: 10px;
-                                                                                  cursor: pointer;
-                                                                                  }
+.theme-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
-                                                                                  .hero {
-                                                                                    min-height: 90vh;
+.hero {
+  min-height: 90vh;
 
-                                                                                      display: flex;
-                                                                                        align-items: center;
-                                                                                        }
+  display: flex;
+  align-items: center;
+}
 
-                                                                                        .hero-content {
-                                                                                          max-width: 700px;
-                                                                                          }
+.hero-content {
+  max-width: 700px;
+}
 
-                                                                                          .hero-subtitle {
-                                                                                            color: var(--primary);
-                                                                                              margin-bottom: 1rem;
-                                                                                                font-weight: bold;
-                                                                                                }
+.hero-subtitle {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
 
-                                                                                                .hero h1 {
-                                                                                                  font-size: 4rem;
-                                                                                                    line-height: 1.1;
-                                                                                                      margin-bottom: 1.5rem;
-                                                                                                      }
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
 
-                                                                                                      .hero-description {
-                                                                                                        color: var(--text-secondary);
-                                                                                                          font-size: 1.1rem;
-                                                                                                            line-height: 1.7;
-                                                                                                              margin-bottom: 2rem;
-                                                                                                              }
+.hero-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
 
-                                                                                                              .hero-buttons {
-                                                                                                                display: flex;
-                                                                                                                  gap: 1rem;
-                                                                                                                  }
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
 
-                                                                                                                  .btn-primary,
-                                                                                                                  .btn-secondary {
-                                                                                                                    padding: 14px 22px;
-                                                                                                                      border-radius: 12px;
-                                                                                                                        text-decoration: none;
-                                                                                                                          font-weight: bold;
-                                                                                                                          }
+.btn-primary,
+.btn-secondary {
+  padding: 14px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-                                                                                                                          .btn-primary {
-                                                                                                                            background: var(--primary);
-                                                                                                                              color: white;
-                                                                                                                              }
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
 
-                                                                                                                              .btn-secondary {
-                                                                                                                                border: 1px solid var(--border);
-                                                                                                                                  color: var(--text);
-                                                                                                                                  }
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
 
-                                                                                                                                  .section {
-                                                                                                                                    padding: 100px 0;
-                                                                                                                                    }
+.section {
+  padding: 100px 0;
+}
 
-                                                                                                                                    .section-title {
-                                                                                                                                      font-size: 2.5rem;
-                                                                                                                                        margin-bottom: 3rem;
-                                                                                                                                        }
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
 
-                                                                                                                                        .about-text {
-                                                                                                                                          max-width: 700px;
-                                                                                                                                            line-height: 1.8;
-                                                                                                                                              color: var(--text-secondary);
-                                                                                                                                              }
+.about-text {
+  max-width: 700px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
 
-                                                                                                                                              .stack-grid,
-                                                                                                                                              .projects-grid {
-                                                                                                                                                display: grid;
-                                                                                                                                                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                                                                                                                                                    gap: 2rem;
-                                                                                                                                                    }
+.stack-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
 
-                                                                                                                                                    .stack-card,
-                                                                                                                                                    .project-card {
-                                                                                                                                                      background: var(--surface);
-                                                                                                                                                        padding: 2rem;
-                                                                                                                                                          border-radius: 18px;
-                                                                                                                                                            border: 1px solid var(--border);
-                                                                                                                                                            }
+.stack-card,
+.project-card {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
 
-                                                                                                                                                            .stack-card h3,
-                                                                                                                                                            .project-card h3 {
-                                                                                                                                                              margin-bottom: 1rem;
-                                                                                                                                                              }
+.stack-card h3,
+.project-card h3 {
+  margin-bottom: 1rem;
+}
 
-                                                                                                                                                              .stack-card ul {
-                                                                                                                                                                list-style: none;
-                                                                                                                                                                }
+.stack-card ul {
+  list-style: none;
+}
 
-                                                                                                                                                                .stack-card li {
-                                                                                                                                                                  margin-bottom: 0.7rem;
-                                                                                                                                                                    color: var(--text-secondary);
-                                                                                                                                                                    }
+.stack-card li {
+  margin-bottom: 0.7rem;
+  color: var(--text-secondary);
+}
 
-                                                                                                                                                                    .project-card p {
-                                                                                                                                                                      color: var(--text-secondary);
-                                                                                                                                                                        line-height: 1.7;
-                                                                                                                                                                          margin-bottom: 1.5rem;
-                                                                                                                                                                          }
+.project-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
 
-                                                                                                                                                                          .project-tech {
-                                                                                                                                                                            display: flex;
-                                                                                                                                                                              flex-wrap: wrap;
-                                                                                                                                                                                gap: 10px;
-                                                                                                                                                                                  margin-bottom: 1.5rem;
-                                                                                                                                                                                  }
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
 
-                                                                                                                                                                                  .project-tech span {
-                                                                                                                                                                                    background: rgba(59, 130, 246, 0.15);
-                                                                                                                                                                                      color: var(--primary);
-                                                                                                                                                                                        padding: 8px 12px;
-                                                                                                                                                                                          border-radius: 10px;
-                                                                                                                                                                                            font-size: 0.9rem;
-                                                                                                                                                                                            }
+.project-tech span {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--primary);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
 
-                                                                                                                                                                                            .project-links a {
-                                                                                                                                                                                              color: var(--primary);
-                                                                                                                                                                                                text-decoration: none;
-                                                                                                                                                                                                }
+.project-links a {
+  color: var(--primary);
+  text-decoration: none;
+}
 
-                                                                                                                                                                                                .contact-links {
-                                                                                                                                                                                                  display: flex;
-                                                                                                                                                                                                    gap: 2rem;
-                                                                                                                                                                                                    }
+.contact-links {
+  display: flex;
+  gap: 2rem;
+}
 
-                                                                                                                                                                                                    .contact-links a {
-                                                                                                                                                                                                      color: var(--primary);
-                                                                                                                                                                                                        text-decoration: none;
-                                                                                                                                                                                                        }
+.contact-links a {
+  color: var(--primary);
+  text-decoration: none;
+}
 
-                                                                                                                                                                                                        @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
 
-                                                                                                                                                                                                          .nav-links {
-                                                                                                                                                                                                              display: none;
-                                                                                                                                                                                                                }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 
-                                                                                                                                                                                                                  .hero h1 {
-                                                                                                                                                                                                                      font-size: 2.5rem;
-                                                                                                                                                                                                                        }
-
-                                                                                                                                                                                                                          .hero-buttons {
-                                                                                                                                                                                                                              flex-direction: column;
-                                                                                                                                                                                                                                }
-
-                                                                                                                                                                                                                                }
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
