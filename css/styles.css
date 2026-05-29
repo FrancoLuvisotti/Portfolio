@@ -108,6 +108,14 @@ body {
   gap: 1rem;
 }
 
+.theme-toggle i {
+    font-size: 1rem;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary);
+}
+
 .btn-primary,
 .btn-secondary {
   padding: 14px 22px;
